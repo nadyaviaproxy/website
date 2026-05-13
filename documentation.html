@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>documentation</title>
+
+<style>
+
+body {
+    font-family: serif;
+}
+
+/* comments */
+
+.comment {
+    font-family: monospace;
+    color: darkblue;
+}
+
+/* gallery */
+
+.gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* standardised containers */
+
+.hover-image {
+    position: relative;
+
+    width: 220px;
+    height: 220px;
+
+    overflow: visible;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: zoom-in;
+}
+
+/* make all images same size */
+
+.hover-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* hover caption */
+
+.hover-caption {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 6px;
+
+    background: white;
+    padding: 6px 8px;
+
+    font-size: 0.9em;
+    font-style: italic;
+
+    white-space: nowrap;
+
+    z-index: 20;
+}
+
+.hover-image:hover .hover-caption {
+    display: block;
+}
+
+/* fullscreen image */
+
+.lightbox {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(255,255,255,0.95);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+}
+
+.lightbox:target {
+    display: flex;
+}
+
+</style>
+</head>
+
+<body>
+
+<p>development of livecoding practice (sep 2025 - apr 2026)
+</p>
+<video controls width="500">
+    <source src="vid/developing_practice.webm">
+</video>
+<p>
+    <br>
+    early iteration of 
+    <span class="comment">//comment</span> 
+    (nov 2025)
+</p>
+<video controls width="500">
+    <source src="vid/crit.webm">
+</video>
+
+<p>
+    <br>
+    most recent iteration of 
+    <span class="comment">//comment</span> 
+    (may 2026)
+    <br><br> [placeholder] <br><br>
+</p>
+
+<p>images</p>
+
+<!-- anchor placed near gallery -->
+<div id="gallery-top"></div>
+
+<div class="gallery">
+
+    <a href="#img3" class="hover-image">
+        <img src="img/crit1.jpg" alt="">
+        <span class="hover-caption">
+            crit, 2025
+        </span>
+    </a>
+
+    <a href="#img1" class="hover-image">
+        <img src="img/interim1.jpg" alt="">
+        <span class="hover-caption">
+            interim crit (1), 2026
+        </span>
+    </a>
+
+    <a href="#img2" class="hover-image">
+        <img src="img/interim2.jpg" alt="">
+        <span class="hover-caption">
+            interim crit (2), 2026
+        </span>
+    </a>
+
+    <a href="#img4" class="hover-image">
+        <img src="img/interim3.jpg" alt="">
+        <span class="hover-caption">
+            interim crit (3), 2025
+        </span>
+    </a>
+
+</div>
+
+<!-- fullscreen images -->
+
+<a href="#gallery-top" class="lightbox" id="img1">
+    <img src="img/crit1.jpg" alt="">
+</a>
+
+<a href="#gallery-top" class="lightbox" id="img2">
+    <img src="img/interim1.jpg" alt="">
+</a>
+
+<a href="#gallery-top" class="lightbox" id="img3">
+    <img src="img/interim2.jpg" alt="">
+</a>
+
+<a href="#gallery-top" class="lightbox" id="img4">
+    <img src="img/interim3.jpg" alt="">
+</a>
+
+<br><br>
+
+<a href="supplementary-material.html">
+    go back </a>
+
+</body>
+</html>

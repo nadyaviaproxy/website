@@ -106,11 +106,47 @@ body {
     display: flex;
 }
 
+
+.song {
+    position: relative;
+    width: fit-content;
+}
+
+/* centered lyric box */
+
+.lyrics {
+    display: none;
+
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: white;
+    border: 1px solid black;
+
+    padding: 20px;
+
+    width: 400px;
+    max-width: 80vw;
+
+    line-height: 1.5;
+    font-size: 0.85em;
+    z-index: 100;
+}
+
+/* show lyrics on hover */
+
+.song:hover .lyrics {
+    display: block;
+}
 </style>
 </head>
 
 <body>
-
+<h3>video</h3>
 <p>development of livecoding practice (sep 2025 - apr 2026)</p>
 
 <iframe 
@@ -123,27 +159,187 @@ body {
     allowfullscreen>
 </iframe>
 
+
 <p>
     <br>
-    early iteration of 
+    2. early iteration of 
     <span class="comment">//comment</span> 
     (nov 2025)
 </p>
 <video controls width="500">
-    <source src="vid/crit.webm" type="video/webm">
-    <source src="vid/crit.mp4" type="video/mp4">    
+    <source src="vid/crit.webm">
 </video>
 
 <p>
     <br>
-    most recent iteration of 
+    3. most recent iteration of 
     <span class="comment">//comment</span> 
     (may 2026)
-    <br><br> [placeholder] <br><br>
+
+    <iframe 
+        width="500" 
+        height="281" 
+        src="https://youtu.be/AcL3draS6uo"
+        title="development of livecoding practice"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>   
 </p>
 
-<p>images</p>
+<h3>audio</h3>
+<p>
+    much of my livecoding practice and writing hinges on the music I write and produce.
+    I have selected 4 demos that I have made in 2025/26 that speak to the condition of 
+    the human/machine relationship through either/or lyrics, sound synthesis and production.
+    <br><br>
+    <i>hover over the cursor track titles to view lyrics
+        <br> recommended: listen with headphones
+    </i>
+</p>
+<div class="song">
 
+    <p class="song-title">1. threshold (2026)</p>
+
+    <div class="lyrics">
+        (I wonder why I feel so sick) <br>
+        <br>
+        and if I end up at the threshold <br>
+        I'm scared I'd lose my feed of meaning <br>
+        and I ate all the spoiled words I'd told <br>
+        consuming some sour boundary <br>
+        <br>
+        the terms and conditions of existence <br>
+        weren't something I remember agreeing to <br>
+        and if I'm subject to change <br>
+        maybe I could interchange with you <br>
+        <br>
+        a torrent of outlawed momentum <br>
+        might carry me to the other side <br>
+        I'll be complicit this time <br>
+        you can rearrange my id's design <br>
+        <br>
+        and if I end up at the threshold <br>
+        I don't think I could digest the meaning <br>
+        I sent messages eaten away by mould <br>
+        my digital diet is rotten <br>
+        <br>
+        modular human, that I am <br>
+        I'm married to a dataset <br>
+        and you still got to my head <br>
+        only to be labeled as an affair <br>
+        <br>
+        the feedback is louder, looped in patterns <br>
+        I'm biting over your skin again <br>
+        I tried to knock on the door <br>
+        but it still spits out a 404 <br>
+
+    </div>
+
+    <audio controls>
+        <source src="audio/threshold demo.mp3" type="audio/mpeg">
+    </audio>
+
+</div>
+
+
+<div class="song">
+
+    <p class="song-title">2. halo (2026)</p>
+
+    <div class="lyrics">
+        
+        You're deeper than my marrow, infected in degrees <br>
+        Of pieces from my heartbreak, every time you grazed your knees <br>
+        <br>
+        and I'm thinking of all the things I've been <br>
+        I've been the rats that have made a home of abandoned trains <br>
+        and I felt the ends of my hair split <br>
+        <br>
+        like static escalators, don't know which way to go <br>
+        swallowed down, its all laid out <br>
+        just like my fractured ankles from falling as a kid <br>
+        you crawled inside my dreams of empty places I'd lived in <br>
+        <br>
+        and I'm thinking of all the things I've been <br>
+        I've been the rats that have made a home of abandoned trains <br>
+        and I felt the ends of my hair split <br>
+        <br>
+        and I'm thinking of all the things I've seen <br>
+        like your childhood crush in the backlight of the blue screen <br>
+        and I felt my pores choke on your skin <br>
+        <br>
+        if only I could taste your halo's dew <br>
+        like the rain that used to fall on my lying tongue <br>
+        and I spoke again to the voice in your phone <br>
+        it told me all I had to do was log off <br>
+        <br>
+        I've made a wish on each one of my ribs <br>
+        for the computer to look prettier when it breaks <br>
+        and if I prayed again to the god in your machine <br>
+        would all the wires come together and replace my veins <br>
+        <br>
+        and if I prayed again…
+
+    </div>
+
+    <audio controls>
+        <source src="audio/halo.mp3" type="audio/mpeg">
+    </audio>
+
+</div>
+
+
+<div class="song">
+
+    <p class="song-title">3. startup antihistamines (2025)</p>
+
+    <div class="lyrics">
+        My limbs feel heavy I focus on the turning fans in me on startup antihistamines, 
+        the vents are overrun with dust and somethings got the whole system stuck, like 
+        a bug <br>
+        like a bug <br>
+        lead empty I cant ignore the churning bile in me on startup antihistamines <br>
+    </div>
+
+    <audio controls>
+        <source src="audio/startup antihistamines.mp3" type="audio/mpeg">
+    </audio>
+
+</div>
+
+
+<div class="song">
+
+    <p class="song-title">4. brain/body (2025)</p>
+
+    <div class="lyrics">
+        My bottom lip coated in the wetness of my mouth <br>
+        And the flakes of chapped skin, sit gritty against my tongue <br>
+        The machine that I promised, only ever left me in drought <br>
+        And I'm spilling battery acid, a bulimic state of the home <br>
+        <br>
+        And I wish I could experience just a little bit of amnesia <br>
+        My brain and my body's in a sentient coma <br>
+        <br>
+        I encrypted a memory of something I don't want <br>
+        <br>
+        And it's input after input and it rots inside the processor <br>
+        My brain and my body's in a sentient coma <br>
+        <br>
+        My teeth feel like plastic in the synthetic bed of my gums
+        I was biting too hard, but you can't override yourself
+        And this humanness insults me, 'cause there's so much that I can't control
+        And I think this body's useless, and my insides — even worse 
+    </div>
+
+    <audio controls>
+        <source src="audio/brain:body.mp3" type="audio/mpeg">
+    </audio>
+
+</div>
+
+<h3>images</h3>
 <!-- anchor placed near gallery -->
 <div id="gallery-top"></div>
 
@@ -173,7 +369,7 @@ body {
     <a href="#img4" class="hover-image">
         <img src="img/interim3.jpg" alt="">
         <span class="hover-caption">
-            interim crit (3), 2026
+            interim crit (3), 2025
         </span>
     </a>
 
